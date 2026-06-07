@@ -1,17 +1,19 @@
-# ⚖️ PROCON Digital – Assistente de Direitos do Consumidor
+# ⚖️ Resolva Já — Assistente de Direito do Consumidor
 
-> Projeto desenvolvido para o Lab **"Construa Seu Assistente Virtual Com Inteligência Artificial"** da [DIO](https://dio.me)  
-> Baseado no repositório: [digitalinnovationone/dio-lab-bia-do-futuro](https://github.com/digitalinnovationone/dio-lab-bia-do-futuro)
+> Projeto desenvolvido para o Lab **"Construa Seu Assistente Virtual Com Inteligência Artificial"** da [DIO](https://dio.me)
+> Baseado no repositório de referência: [digitalinnovationone/dio-lab-bia-do-futuro](https://github.com/digitalinnovationone/dio-lab-bia-do-futuro)
 
 ---
 
 ## 📋 Sobre o Projeto
 
-O **PROCON Digital** é um assistente virtual que ajuda pessoas de baixa e média renda a entender seus direitos como consumidores, com linguagem simples e orientação prática baseada no **CDC (Lei nº 8.078/1990)**.
+O **Resolva Já** é um assistente virtual que ajuda qualquer pessoa — consumidor, lojista ou funcionário — a entender direitos e deveres nas relações de compra e venda no Brasil, com linguagem simples, analogias do cotidiano e orientação prática.
+
+O assistente foi pensado para ser usado **no exato momento em que o problema acontece** — dentro da loja, em casa após receber um produto errado, ou ao identificar uma cobrança indevida no cartão.
 
 **Serve para dois públicos:**
-- **Consumidores:** Saiba exatamente o que exigir e como agir
-- **Lojistas/Funcionários:** Entenda como agir corretamente e evite reclamações no Procon
+- **Consumidores:** Saiba exatamente o que exigir, como agir e o que falar
+- **Lojistas e funcionários:** Entenda como responder corretamente e evite reclamações no Procon e Reclame Aqui
 
 ---
 
@@ -22,11 +24,23 @@ Para cada situação descrita, responde em **6 etapas estruturadas**:
 | Etapa | Conteúdo |
 |---|---|
 | 🎯 O que está acontecendo | Identifica o problema com clareza |
-| ⚖️ O que a lei diz | Explica o artigo do CDC com analogia simples |
-| ✅ Seu direito | Lista o que você pode exigir |
-| 💬 Como exigir | Script exato do que falar ou escrever |
-| 🤝 Como a loja pode reagir | Formas legais de negociação do comércio |
-| ⚠️ Se não resolver | Procon, Reclame Aqui, consumidor.gov.br, JEC |
+| ⚖️ O que a lei diz | Explica a lei com analogia simples do cotidiano |
+| ✅ O que você pode exigir | Lista clara e objetiva dos direitos |
+| 💬 O que falar ou escrever | Script exato para usar na hora |
+| 🤝 Como a outra parte pode reagir | Formas legais de negociação para evitar conflito |
+| ⚠️ Se não resolver | Procon, Reclame Aqui, consumidor.gov.br, ANPD |
+
+---
+
+## 📚 Legislação de Referência
+
+| Lei | Descrição |
+|---|---|
+| **CDC — Lei nº 8.078/1990** | Código de Defesa do Consumidor — lei base |
+| **Decreto nº 7.962/2013** | Regulamenta o CDC para compras online (e-commerce) |
+| **Lei nº 14.181/2021** | Superendividamento e proteção contra fraude em cartão |
+| **Decreto nº 11.034/2022** | Obrigações do SAC — atendimento ao consumidor |
+| **LGPD — Lei nº 13.709/2018** | Proteção de dados pessoais em compras digitais |
 
 ---
 
@@ -40,7 +54,7 @@ Para cada situação descrita, responde em **6 etapas estruturadas**:
 ├── 📄 .gitignore
 │
 ├── 📁 data/
-│   ├── direitos_cdc.json          # Artigos do CDC estruturados e simplificados
+│   ├── direitos_cdc.json          # Base de conhecimento: artigos e tópicos do CDC
 │   └── situacoes_comuns.csv       # 12 situações mapeadas com direitos e ações
 │
 ├── 📁 docs/
@@ -51,7 +65,7 @@ Para cada situação descrita, responde em **6 etapas estruturadas**:
 │   └── 05-pitch.md                # Roteiro do pitch de 3 minutos
 │
 ├── 📁 src/
-│   └── app.py                     # Aplicação Streamlit com integração Anthropic
+│   └── app.py                     # Aplicação Streamlit com integração Google Gemini
 │
 └── 📁 .streamlit/
     └── secrets.toml               # ⚠️ NÃO suba este arquivo! (está no .gitignore)
@@ -63,14 +77,14 @@ Para cada situação descrita, responde em **6 etapas estruturadas**:
 
 ### Pré-requisitos
 - Python 3.10 ou superior
-- Conta na [Anthropic Console](https://console.anthropic.com) para obter a API Key
+- Conta no [Google AI Studio](https://aistudio.google.com) para obter a chave de API gratuita do Gemini
 
 ### Passo a passo
 
 **1. Clone o repositório**
 ```bash
-git clone https://github.com/SEU_USUARIO/assistente-direitos-consumidor.git
-cd assistente-direitos-consumidor
+git clone https://github.com/SEU_USUARIO/resolva-ja.git
+cd resolva-ja
 ```
 
 **2. Crie e ative um ambiente virtual**
@@ -93,64 +107,59 @@ pip install -r requirements.txt
 
 Crie o arquivo `.streamlit/secrets.toml` com o conteúdo:
 ```toml
-ANTHROPIC_API_KEY = "sk-ant-sua-chave-aqui"
+GEMINI_API_KEY = "AIza-sua-chave-aqui"
 ```
 
 > ⚠️ **IMPORTANTE:** Nunca suba este arquivo para o GitHub! Ele já está no `.gitignore`.
+> Chave gratuita disponível em: [aistudio.google.com](https://aistudio.google.com) → Get API Key
 
 **5. Execute o app**
 ```bash
-streamlit run src/app.py
+python -m streamlit run src/app.py
 ```
 
 O app abrirá automaticamente em `http://localhost:8501`
 
 ---
 
-## 🔧 Como Usar no VS Code
-
-1. Abra a pasta do projeto no VS Code: `File → Open Folder`
-2. Instale a extensão **Python** (Microsoft)
-3. Selecione o interpretador do ambiente virtual: `Ctrl+Shift+P → Python: Select Interpreter`
-4. Abra o terminal integrado: `Ctrl+` ` `
-5. Execute: `streamlit run src/app.py`
-
----
-
 ## 🧪 Situações que o Assistente Cobre
 
-| Situação | Artigo CDC |
+| Situação | Legislação |
 |---|---|
-| Produto com defeito (loja física ou online) | Art. 18/26 |
-| Direito de arrependimento (compras online) | Art. 49 |
-| Produto não entregue no prazo | Art. 35 |
-| Cobrança indevida / cobrado duas vezes | Art. 42 |
-| Propaganda enganosa / preço diferente | Art. 30/37 |
-| Produto vencido | Art. 18/64 |
-| Serviço mal prestado (oficinas, salões) | Art. 20 |
-| Discriminação ou recusa de atendimento | Art. 39 |
-| Troca sem defeito em loja física | ⚠️ Sem cobertura legal — declarado com honestidade |
+| Produto com defeito (loja física ou online) | Art. 18/26 CDC |
+| Direito de arrependimento — compras online | Art. 49 CDC + Decreto 7.962/2013 |
+| Obrigações das lojas online | Decreto 7.962/2013 |
+| Produto não entregue no prazo | Art. 35 CDC |
+| Cobrança indevida / cobrado duas vezes | Art. 42 CDC |
+| Propaganda enganosa / preço diferente | Art. 30/37 CDC |
+| Produto vencido ou impróprio | Art. 18/64 CDC |
+| Serviço mal prestado (oficinas, salões) | Art. 20 CDC |
+| Recusa ou discriminação no atendimento | Art. 39 CDC |
+| Fraude em cartão de crédito | Lei 14.181/2021 |
+| Empresa dificulta cancelamento (SAC) | Decreto 11.034/2022 |
+| Dados pessoais usados sem permissão | LGPD — Lei 13.709/2018 |
+| Troca sem defeito em loja física | ⚠️ Sem cobertura — declarado com honestidade |
 
 ---
 
-## 🛡️ Anti-Alucinação
+## 🛡️ Princípios Anti-Alucinação
 
-O assistente é projetado para:
-- Responder **apenas com base no CDC** e nos dados da pasta `data/`
-- **Declarar claramente** quando a lei não se aplica
+O assistente foi projetado para:
+- Responder **apenas com base na legislação** e nos dados da pasta `data/`
+- **Declarar claramente** quando a lei não se aplica ao caso
 - **Nunca inventar** artigos, prazos ou direitos inexistentes
-- **Orientar ao Procon** em casos ambíguos ou complexos
+- **Orientar ao Procon** em casos ambíguos ou muito complexos
 
 ---
 
-## 🏛️ Canais de Defesa do Consumidor
+## 🏛️ Canais Oficiais de Apoio ao Consumidor
 
-| Canal | Quando usar | Link |
+| Canal | Quando usar | Acesso |
 |---|---|---|
-| Procon | Após falha na negociação direta | Pesquise "Procon + seu estado" |
-| Reclame Aqui | Pressão pública sobre a empresa | reclameaqui.com.br |
-| Consumidor.gov.br | Mediação oficial com grandes empresas | consumidor.gov.br |
-| JEC | Causas até 20 salários mín. sem advogado | TJ do seu estado |
+| Consumidor.gov.br | Mediação oficial com grandes empresas | [consumidor.gov.br](https://www.consumidor.gov.br) |
+| Reclame Aqui | Pressão pública e reputação da empresa | [reclameaqui.com.br](https://www.reclameaqui.com.br) |
+| Procon | Processo formal após falha na negociação | [procon.sp.gov.br](https://www.procon.sp.gov.br/procon-brasil/) |
+| ANPD | Proteção de dados pessoais | [gov.br/anpd](https://www.gov.br/anpd) |
 
 ---
 
@@ -158,22 +167,25 @@ O assistente é projetado para:
 
 | Tecnologia | Função |
 |---|---|
+| [Python 3.10+](https://python.org) | Linguagem principal |
 | [Streamlit](https://streamlit.io) | Interface do chatbot |
-| [Anthropic API](https://docs.anthropic.com) | Modelo de linguagem (Claude) |
-| Python 3.10+ | Linguagem principal |
-| JSON + CSV | Base de conhecimento |
+| [Google Gemini API](https://aistudio.google.com) | Modelo de linguagem (gratuito) |
+| [google-genai](https://pypi.org/project/google-genai/) | SDK oficial do Google Gemini |
+| JSON + CSV | Base de conhecimento estruturada |
 
 ---
 
 ## 📝 Aviso Legal
 
-> Este assistente é **informativo e educacional**. Não substitui consultoria jurídica profissional. Para casos complexos envolvendo processos judiciais, procure um advogado ou a Defensoria Pública.
+> Este assistente é **informativo e educacional**. Não substitui consultoria jurídica profissional.
+> Para casos complexos envolvendo processos judiciais, procure um advogado ou a Defensoria Pública do seu estado.
 
 ---
 
-## 👤 Autor
+## 👩‍💻 Autora
 
-Desenvolvido como projeto do Lab DIO — "Construa Seu Assistente Virtual Com Inteligência Artificial"
+**Jackelinne Rodrigues**
+Desenvolvido como projeto do Lab DIO — *"Construa Seu Assistente Virtual Com Inteligência Artificial"*
 
 ---
 
