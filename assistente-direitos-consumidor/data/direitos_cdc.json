@@ -1,0 +1,353 @@
+{
+  "fonte": "CDC (Lei nº 8.078/1990) + Decreto 7.962/2013 + Lei 14.181/2021 + Decreto 11.034/2022",
+  "legislacao_completa": [
+    {
+      "lei": "Lei nº 8.078/1990",
+      "nome": "Código de Defesa do Consumidor (CDC)",
+      "descricao": "Lei principal que protege quem compra produtos ou contrata serviços no Brasil"
+    },
+    {
+      "lei": "Decreto nº 7.962/2013",
+      "nome": "Lei do E-commerce",
+      "descricao": "Regulamenta o CDC especificamente para compras pela internet. Obriga lojas online a exibir CNPJ, endereço físico, canal de atendimento e garante o direito de arrependimento de 7 dias para compras online"
+    },
+    {
+      "lei": "Lei nº 14.181/2021",
+      "nome": "Lei do Superendividamento",
+      "descricao": "Atualiza o CDC para proteger quem não consegue pagar dívidas sem comprometer o básico para viver. Também proíbe empresas de dificultar o cancelamento de compras fraudulentas no cartão"
+    },
+    {
+      "lei": "Decreto nº 11.034/2022",
+      "nome": "Novo SAC (Serviço de Atendimento ao Consumidor)",
+      "descricao": "Define prazos e obrigações do atendimento das empresas. Toda empresa que vende pela internet ou por telefone é obrigada a ter SAC gratuito e resolver reclamações em até 7 dias"
+    },
+    {
+      "lei": "Lei nº 13.709/2018",
+      "nome": "LGPD — Lei Geral de Proteção de Dados",
+      "descricao": "Garante que seus dados pessoais (nome, CPF, endereço, cartão) só podem ser usados com sua autorização em compras online. Violação gera direito a indenização"
+    },
+    {
+      "lei": "Decreto nº 2.181/1997",
+      "nome": "Sistema Nacional de Defesa do Consumidor (SNDC)",
+      "descricao": "Organiza os Procons de todo o Brasil e define as penalidades administrativas para empresas que descumprem o CDC"
+    }
+  ],
+  "topicos": [
+    {
+      "id": "garantia_legal",
+      "titulo": "Garantia Legal",
+      "artigos": ["Art. 26 CDC", "Art. 18 CDC"],
+      "resumo": "Todo produto tem garantia mínima garantida por lei, independente do que a loja disser.",
+      "prazos": {
+        "produtos_nao_duraveis": "30 dias — alimentos, cosméticos, produtos de limpeza",
+        "produtos_duraveis": "90 dias — eletrodomésticos, eletrônicos, roupas, calçados, móveis"
+      },
+      "quando_conta": "O prazo começa quando você percebe o defeito, não na data da compra.",
+      "analogia": "É como uma promessa que a lei obriga o vendedor a cumprir. Mesmo que ele não queira, tem que honrar.",
+      "o_que_pode_exigir": [
+        "Substituição do produto por um igual sem defeito",
+        "Conserto gratuito do produto (a loja tem até 30 dias para consertar)",
+        "Devolução do dinheiro pago integralmente",
+        "Abatimento proporcional no preço"
+      ],
+      "como_exigir": "Vá à loja com nota fiscal e diga: 'Quero acionar a garantia legal. Meu produto está com defeito. Pelo Art. 18 do CDC, tenho direito à troca, conserto ou devolução do valor.'",
+      "como_loja_pode_negociar": [
+        "Oferecer o conserto antes de trocar — mas tem só 30 dias para isso",
+        "Propor crédito na loja ao invés de devolução em dinheiro — você pode recusar",
+        "Oferecer produto similar se o exato não tiver estoque"
+      ],
+      "atencao": "A garantia contratual (aquela que a loja vende separado) é extra. A garantia legal é obrigatória e gratuita sempre."
+    },
+    {
+      "id": "direito_arrependimento",
+      "titulo": "Direito de Arrependimento — Compras Online, por Telefone ou Fora da Loja",
+      "artigos": ["Art. 49 CDC", "Decreto 7.962/2013 Art. 5º"],
+      "resumo": "Comprou pela internet, telefone, aplicativo ou catálogo? Você tem 7 dias para desistir sem precisar dar nenhuma explicação.",
+      "prazo": "7 dias corridos a partir do recebimento do produto ou assinatura do contrato",
+      "quando_se_aplica": [
+        "Compras em sites e aplicativos (Shopee, Mercado Livre, Amazon, lojas virtuais)",
+        "Compras por telefone ou WhatsApp com entrega posterior",
+        "Compras por catálogo ou TV",
+        "Compras feitas na porta de casa com vendedores"
+      ],
+      "quando_NAO_se_aplica": [
+        "Compras feitas presencialmente dentro da loja física",
+        "Produtos digitais já baixados ou utilizados (ex: software ativado, e-book já lido)",
+        "Alimentos perecíveis já entregues e consumidos",
+        "Passagens aéreas e hospedagens com data específica (podem ter regras próprias)"
+      ],
+      "analogia": "Imagina que você comprou um casaco por foto na internet e quando chegou a cor era bem diferente. A lei diz: pode devolver. Sem briga, sem justificativa.",
+      "o_que_pode_exigir": [
+        "Devolução integral do dinheiro, incluindo o frete que você pagou na compra",
+        "O custo de envio do produto de volta é da empresa, não seu",
+        "Prazo máximo de 30 dias para a empresa te reembolsar"
+      ],
+      "como_exigir": "Mande mensagem por escrito (e-mail, chat, WhatsApp) dentro dos 7 dias: 'Quero exercer meu direito de arrependimento previsto no Art. 49 do CDC e Decreto 7.962/2013. Solicito cancelamento e devolução integral do valor pago, incluindo o frete.'",
+      "como_loja_pode_negociar": [
+        "Oferecer troca por outro produto ao invés de reembolso — mas você pode recusar",
+        "Propor crédito na loja — você não é obrigado a aceitar",
+        "Propor troca por produto de valor diferente com desconto ou complemento"
+      ],
+      "guarde": "Sempre salve o print ou protocolo da solicitação. É sua prova caso precise acionar o Procon."
+    },
+    {
+      "id": "compra_online_obrigacoes",
+      "titulo": "Obrigações das Lojas Online — Decreto do E-commerce",
+      "artigos": ["Decreto 7.962/2013", "Art. 31 CDC"],
+      "resumo": "Toda loja online é obrigada por lei a exibir informações claras e ter canal de atendimento gratuito.",
+      "o_que_a_loja_e_obrigada_a_ter": [
+        "CNPJ ou CPF do vendedor visível no site",
+        "Endereço físico da empresa",
+        "Canal de atendimento gratuito (chat, e-mail ou telefone)",
+        "Confirmação do pedido por e-mail imediatamente após a compra",
+        "Resumo claro do contrato antes de você finalizar a compra",
+        "Prazo de entrega estimado antes de você pagar"
+      ],
+      "o_que_pode_exigir": [
+        "Se a loja não tiver essas informações, você pode cancelar sem custo nenhum",
+        "Se o prazo não foi informado e a entrega atrasou, pode cancelar e receber o dinheiro de volta",
+        "Atendimento gratuito para resolver o problema"
+      ],
+      "como_exigir": "Se a loja não cumpriu alguma dessas obrigações, registre no consumidor.gov.br e no Reclame Aqui citando o Decreto 7.962/2013.",
+      "analogia": "É como uma loja física que é obrigada a ter CNPJ na porta e preço nas etiquetas. Online é a mesma coisa, só que na tela."
+    },
+    {
+      "id": "sac_atendimento",
+      "titulo": "SAC — A Empresa é Obrigada a te Atender",
+      "artigos": ["Decreto 11.034/2022"],
+      "resumo": "Toda empresa que vende pela internet, telefone ou TV é obrigada a ter atendimento gratuito e resolver sua reclamação.",
+      "o_que_a_empresa_e_obrigada_a_fazer": [
+        "Atendimento por telefone gratuito (0800) ou canal digital sem custo",
+        "Disponibilidade 24 horas por dia, 7 dias por semana para cancelamentos",
+        "Resolver sua reclamação em até 7 dias úteis",
+        "Não pode transferir sua ligação mais de uma vez para resolver o mesmo problema",
+        "Não pode exigir que você ligue de volta para continuar o atendimento"
+      ],
+      "o_que_pode_exigir": [
+        "Protocolo de atendimento em todos os contatos",
+        "Resposta por escrito se você pedir",
+        "Resolução do problema no prazo de 7 dias úteis"
+      ],
+      "como_exigir": "Anote o protocolo de cada contato. Se não resolverem em 7 dias, acione o Procon citando o Decreto 11.034/2022.",
+      "analogia": "É como ir a um banco e exigir ser atendido. A empresa não pode simplesmente ignorar você ou ficar te passando de setor em setor infinitamente."
+    },
+    {
+      "id": "fraude_cartao",
+      "titulo": "Compra Fraudulenta no Cartão — Contestação",
+      "artigos": ["Art. 42 CDC", "Lei 14.181/2021 Art. 54-B"],
+      "resumo": "Se aparecer uma compra no seu cartão que você não fez, a empresa é obrigada a cancelar imediatamente.",
+      "o_que_pode_exigir": [
+        "Cancelamento imediato da compra fraudulenta",
+        "Estorno do valor em até 1 fatura (ou crédito imediato no limite)",
+        "A empresa não pode dificultar ou atrasar o cancelamento"
+      ],
+      "como_exigir": "Ligue imediatamente para o SAC do cartão e diga: 'Identifico uma compra fraudulenta na minha fatura de R$X na data Y. Pelo Art. 54-B da Lei 14.181/2021, solicito cancelamento imediato e estorno do valor.'",
+      "como_loja_pode_negociar": [
+        "Pedir que você registre um boletim de ocorrência — é razoável aceitar",
+        "Propor análise em até 7 dias — aceitável, mas o cancelamento preventivo deve ser imediato",
+        "Oferecer cartão novo com número diferente"
+      ],
+      "analogia": "É como se alguém assinasse um cheque no seu nome. O banco tem obrigação de cancelar, não de te fazer provar infinitamente que não foi você."
+    },
+    {
+      "id": "superendividamento",
+      "titulo": "Superendividamento — Quando as Dívidas de Compras Saem do Controle",
+      "artigos": ["Lei 14.181/2021", "Art. 54-A ao 54-G CDC"],
+      "resumo": "Se você não consegue mais pagar suas dívidas de compras sem ficar sem o básico para viver, a lei garante o direito de renegociar tudo de uma vez.",
+      "o_que_e": "Superendividamento é quando uma pessoa de boa-fé não consegue pagar o total de suas dívidas sem comprometer o mínimo para sobreviver (alimentação, moradia, transporte básico).",
+      "o_que_pode_exigir": [
+        "Renegociação de todas as dívidas em uma audiência só, com todos os credores",
+        "Plano de pagamento de até 5 anos",
+        "Preservação do valor mínimo para viver durante o pagamento",
+        "Proibição de práticas abusivas de crédito pelos credores"
+      ],
+      "como_buscar_ajuda": "Procure o Procon do seu estado ou o Juizado Especial Cível. O atendimento é gratuito.",
+      "atencao": "Dívidas de luxo (artigos caros não essenciais) e dívidas contraídas de má-fé não entram nessa proteção.",
+      "analogia": "É como um 'reset' supervisionado das dívidas. A lei junta todos os credores e organiza um pagamento que caiba no seu bolso sem te deixar sem o básico."
+    },
+    {
+      "id": "dados_pessoais_lgpd",
+      "titulo": "Seus Dados em Compras Online — LGPD",
+      "artigos": ["Lei 13.709/2018 — LGPD"],
+      "resumo": "Toda loja online que coleta seus dados (nome, CPF, endereço, cartão) precisa da sua autorização e não pode repassar para terceiros sem permissão.",
+      "o_que_pode_exigir": [
+        "Saber quais dados a empresa tem sobre você",
+        "Pedir a exclusão dos seus dados após o fim da relação comercial",
+        "Não receber spam ou ofertas sem ter autorizado",
+        "Ser avisado imediatamente se seus dados forem vazados",
+        "Indenização em caso de vazamento que te causou dano"
+      ],
+      "como_exigir": "Entre em contato com o encarregado de dados da empresa (toda empresa grande é obrigada a ter um) ou registre reclamação na ANPD (Autoridade Nacional de Proteção de Dados): gov.br/anpd",
+      "analogia": "Seus dados são seus. A empresa pode usar enquanto você for cliente, mas não pode vender, repassar ou guardar para sempre sem sua permissão."
+    },
+    {
+      "id": "entrega_produto",
+      "titulo": "Prazo de Entrega e Produto Não Entregue",
+      "artigos": ["Art. 35 CDC", "Decreto 7.962/2013 Art. 4º"],
+      "resumo": "A loja tem obrigação de entregar no prazo combinado. Se não entregar, você pode cancelar e pegar o dinheiro de volta.",
+      "o_que_pode_exigir": [
+        "Cumprimento da entrega no prazo",
+        "Aceitar outro produto equivalente",
+        "Cancelamento e devolução integral do valor pago",
+        "Indenização por prejuízos causados pelo atraso em casos graves"
+      ],
+      "analogia": "Você pagou por um fogão para chegar na sexta antes da mudança. Se não chegou, a loja quebrou a promessa. Você pode cancelar tudo e pegar seu dinheiro de volta.",
+      "como_exigir": "Contate a loja por escrito: 'O prazo de entrega era [data] e não recebi. Pelo Art. 35 do CDC, solicito cancelamento e devolução integral em até 7 dias úteis.'",
+      "como_loja_pode_negociar": [
+        "Propor novo prazo com desconto ou brinde como compensação",
+        "Oferecer frete grátis na próxima compra",
+        "Mas se você já está prejudicado, tem direito de cancelar sem aceitar nada"
+      ],
+      "atencao": "A responsabilidade pela entrega é sempre da loja onde você comprou, mesmo que o atraso seja da transportadora."
+    },
+    {
+      "id": "cobranca_indevida",
+      "titulo": "Cobrança Indevida — Cobrou Errado ou Cobrou Duas Vezes",
+      "artigos": ["Art. 42 CDC", "Art. 42-A CDC"],
+      "resumo": "Se a loja cobrou valor errado ou cobrou duas vezes, ela é obrigada a devolver em dobro o que cobrou a mais.",
+      "o_que_pode_exigir": [
+        "Devolução em dobro do valor cobrado indevidamente",
+        "Correção imediata na fatura ou sistema",
+        "Exceção: se for engano claro com boa-fé provada, pode ser devolução simples"
+      ],
+      "analogia": "É como troco errado. Se a loja te deu troco de R$10 sendo que eram R$50, ela tem que corrigir. Só que pela lei, deve devolver o dobro do que errou.",
+      "como_exigir": "Guarde o comprovante e exija: 'Fui cobrado indevidamente em R$X. Pelo Art. 42 do CDC, tenho direito à devolução em dobro: R$[dobro].'",
+      "como_loja_pode_negociar": [
+        "Alegar erro de sistema e oferecer devolução simples como boa-fé",
+        "Propor crédito ou desconto na próxima compra",
+        "Parcelar a devolução — mas você pode exigir à vista"
+      ]
+    },
+    {
+      "id": "propaganda_enganosa",
+      "titulo": "Propaganda Enganosa e Preço Diferente do Anunciado",
+      "artigos": ["Art. 30 CDC", "Art. 31 CDC", "Art. 37 CDC"],
+      "resumo": "O preço anunciado é uma promessa legal. Se a loja anunciou por R$100, tem que vender por R$100, mesmo que seja erro.",
+      "o_que_pode_exigir": [
+        "Comprar pelo preço anunciado",
+        "Cancelamento sem custo se não quiser comprar pelo preço errado",
+        "Indenização por danos morais em casos graves via Procon ou Juizado"
+      ],
+      "analogia": "Se você viu na vitrine 'tênis por R$80' e na hora de pagar cobram R$150, a loja tem que honrar o preço da vitrine. A propaganda é um contrato.",
+      "como_exigir": "Tire foto do preço anunciado e mostre: 'O produto está anunciado por R$X. Pelo Art. 30 do CDC, a oferta vincula. Exijo o preço anunciado ou cancelamento sem custo.'",
+      "como_loja_pode_negociar": [
+        "Explicar o erro e honrar o preço mesmo assim — o correto a fazer",
+        "Se não puder honrar, cancelar sem custo algum para você",
+        "Em erros absurdos (R$1 em televisão), a loja pode contestar no Procon — mas precisa provar boa-fé"
+      ],
+      "atencao": "Tire sempre fotos das promoções antes de ir ao caixa. É sua prova."
+    },
+    {
+      "id": "produto_vencido",
+      "titulo": "Produto Vencido ou Impróprio para Consumo",
+      "artigos": ["Art. 18 CDC", "Art. 64 CDC"],
+      "resumo": "Vender produto vencido é crime além de infração ao CDC. Você tem direito de reclamar e ser indenizado.",
+      "o_que_pode_exigir": [
+        "Substituição imediata por produto dentro do prazo",
+        "Devolução integral do dinheiro",
+        "Indenização por dano à saúde se tiver adoecido",
+        "Denúncia ao Procon e à Vigilância Sanitária (ANVISA)"
+      ],
+      "analogia": "Produto vencido é como uma armadilha. A loja tem obrigação de checar as datas. Se não fez e te vendeu, ela errou e tem que responder.",
+      "como_exigir": "Guarde o produto e a nota. Vá à loja: 'Comprei este produto vencido desde [data]. Pelo Art. 18 do CDC exijo substituição ou devolução. Em caso negativo, denunciarei ao Procon e Vigilância Sanitária.'",
+      "como_loja_pode_negociar": [
+        "Trocar na hora sem burocracia — o correto",
+        "Devolver o dinheiro imediatamente",
+        "Se você ficou doente, devem cobrir despesas médicas comprovadas"
+      ],
+      "emergencia": "Se você ficou doente por causa do produto, além do Procon acione o SAMU e registre boletim de ocorrência."
+    },
+    {
+      "id": "recusa_servico",
+      "titulo": "Discriminação e Recusa de Atendimento",
+      "artigos": ["Art. 39 CDC", "Art. 6º CDC"],
+      "resumo": "Nenhuma loja pode se recusar a atender ou discriminar sem motivo justo.",
+      "o_que_pode_exigir": [
+        "Atendimento em igualdade de condições",
+        "Indenização por danos morais em caso de humilhação ou discriminação",
+        "Se for discriminação racial: denúncia ao Ministério Público — é crime"
+      ],
+      "analogia": "Você tem o mesmo direito de entrar e ser atendido que qualquer outra pessoa. Discriminação é crime, não apenas falta de educação.",
+      "como_exigir": "Registre o ocorrido (gravação, testemunhas) e acione o Procon. Se for discriminação racial ou por gênero, registre boletim de ocorrência.",
+      "como_loja_pode_negociar": [
+        "Apresentar justificativa legal para recusa (estabelecimento fechado, produto em falta)",
+        "Oferecer pedido de desculpas e compensação para evitar processo",
+        "Discriminação por raça, gênero ou aparência não tem negociação: é crime"
+      ]
+    },
+    {
+      "id": "troca_sem_defeito",
+      "titulo": "Troca por Desistência Sem Defeito — Loja Física",
+      "artigos": ["Sem cobertura específica no CDC para compras presenciais"],
+      "resumo": "ATENÇÃO: A lei NÃO obriga a troca de produto sem defeito comprado presencialmente. Nesses casos, a troca é uma cortesia voluntária da loja.",
+      "o_que_fazer": [
+        "Verificar se a loja tem política de troca por cortesia",
+        "Perguntar antes de comprar: 'Se não servir, posso trocar?'",
+        "Guardar a nota fiscal que muitas lojas exigem para troca voluntária"
+      ],
+      "atencao": "Este é um caso onde o CDC NÃO obriga a troca. Aja com calma e educação para negociar. O Procon não pode ajudar nesse caso específico.",
+      "diferenca_online": "IMPORTANTE: Para compras online, a regra é diferente! Online você tem 7 dias para devolver mesmo sem defeito e sem justificativa (Art. 49 CDC + Decreto 7.962/2013)."
+    },
+    {
+      "id": "contrato_servico",
+      "titulo": "Serviços com Defeito — Oficinas, Salões, Reparos",
+      "artigos": ["Art. 20 CDC", "Art. 26 CDC"],
+      "resumo": "Se pagou por um serviço e ele foi mal feito ou não foi feito, você tem direitos claros.",
+      "prazos_reclamacao": {
+        "servicos_simples": "30 dias para reclamar após perceber o problema",
+        "servicos_duraveis_complexos": "90 dias para reclamar após perceber o problema"
+      },
+      "o_que_pode_exigir": [
+        "Reexecução do serviço sem custo adicional",
+        "Redução proporcional no preço",
+        "Devolução do valor pago",
+        "Indenização por danos causados pelo serviço mal feito"
+      ],
+      "analogia": "Pagou R$500 para pintar o carro e saiu com arranhões? A oficina tem que consertar sem cobrar nada a mais. Você não pagou para piorar.",
+      "como_exigir": "Documente com fotos e retorne ao prestador: 'O serviço não foi executado como combinado. Pelo Art. 20 do CDC, exijo reexecução gratuita ou devolução do valor.'",
+      "como_loja_pode_negociar": [
+        "Refazer o serviço com prazo acordado",
+        "Cobrir apenas os materiais sem cobrar mão de obra novamente",
+        "Propor desconto no valor final"
+      ]
+    }
+  ],
+  "orgaos_de_defesa": [
+    {
+      "nome": "Procon",
+      "como_acionar": "Pesquise 'Procon + seu estado' ou acesse procon.br",
+      "quando_usar": "Quando a negociação direta com a loja falhar",
+      "custo": "Gratuito"
+    },
+    {
+      "nome": "Reclame Aqui",
+      "como_acionar": "reclameaqui.com.br",
+      "quando_usar": "Para registrar reclamação pública e pressionar a empresa — muitas resolvem rapidamente por pressão de reputação",
+      "custo": "Gratuito"
+    },
+    {
+      "nome": "Consumidor.gov.br",
+      "como_acionar": "consumidor.gov.br",
+      "quando_usar": "Plataforma oficial do governo para mediação com grandes empresas. Tem prazo de resposta obrigatório",
+      "custo": "Gratuito"
+    },
+    {
+      "nome": "Juizado Especial Cível (JEC)",
+      "como_acionar": "Tribunal de Justiça do seu estado — presencialmente",
+      "quando_usar": "Para causas até 40 salários mínimos. Sem advogado para causas até 20 salários mínimos",
+      "custo": "Gratuito até 20 salários mínimos sem advogado"
+    },
+    {
+      "nome": "ANPD — Autoridade Nacional de Proteção de Dados",
+      "como_acionar": "gov.br/anpd",
+      "quando_usar": "Para reclamações sobre uso indevido dos seus dados pessoais em compras online",
+      "custo": "Gratuito"
+    },
+    {
+      "nome": "Vigilância Sanitária / ANVISA",
+      "como_acionar": "anvisa.gov.br ou Vigilância Sanitária municipal",
+      "quando_usar": "Para produtos vencidos, contaminados ou impróprios para consumo",
+      "custo": "Gratuito"
+    }
+  ]
+}
